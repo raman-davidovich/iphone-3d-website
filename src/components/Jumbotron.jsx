@@ -2,6 +2,7 @@ import Iphone from "../assets/images/iphone-14.jpg";
 import HoldingIphone from "../assets/images/iphone-hand.png";
 
 function Jumbotron() {
+  //TODO: create shared function with one argunent and use here;
   const handleLearnMore = () => {
     const element = document.querySelector(".sound-section");
     window.scrollTo({
