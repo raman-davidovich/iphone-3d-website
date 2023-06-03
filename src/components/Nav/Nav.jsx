@@ -12,7 +12,7 @@ function Nav() {
           {list.map((item) => {
             return (
               <li key={item}>
-                <a className="link-styled">{item}</a>
+                <span className="link-styled">{item}</span>
               </li>
             );
           })}
