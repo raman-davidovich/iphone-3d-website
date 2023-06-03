@@ -1,8 +1,9 @@
-import Iphone from "../assets/images/iphone-14.jpg";
-import HoldingIphone from "../assets/images/iphone-hand.png";
+import Iphone from "../assets/images/iphone-14.avif";
+import HoldingIphone from "../assets/images/iphone-hand.webp";
+import CTA from "./shared/CTA";
 
 function Jumbotron() {
-  //TODO: create shared function with one argunent and use here;
+  // TODO: create shared function with one argunent and use here;
   const handleLearnMore = () => {
     const element = document.querySelector(".sound-section");
     window.scrollTo({
@@ -20,16 +21,7 @@ function Jumbotron() {
       <span className="description">
         From $41.62/mo. for 24 mo. or $999 before trade-in
       </span>
-      <ul className="links">
-        <li>
-          <button className="button">Buy</button>
-        </li>
-        <li>
-          <a className="link" onClick={handleLearnMore}>
-            Learn more
-          </a>
-        </li>
-      </ul>
+      <CTA handleClick={handleLearnMore} />
       <img className="iphone-img" src={HoldingIphone} alt="iPhone" />
     </div>
   );

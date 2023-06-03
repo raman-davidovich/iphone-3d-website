@@ -28,14 +28,14 @@ npm run dev
 
 > Use "Learn more" and "Top" buttons to check exciting transition animation iPhone model between different website sections.
 
-![Website screenshot](./src/assets/screenshots/firstScreen.png)
-![Website screenshot](./src/assets/screenshots/secondScreen.png)
+![Website screenshot](./src/assets/screenshots/firstScreen.avif)
+![Website screenshot](./src/assets/screenshots/secondScreen.avif)
 
-![Website screenshot](./src/assets/screenshots/thirdScreen.png)
+![Website screenshot](./src/assets/screenshots/thirdScreen.avif)
 
 > "Try me!" button gives you access to advanced animation mode where you can interact with the model using mouse.
 
-![Website screenshot](./src/assets/screenshots/fourthScreen.png)
+![Website screenshot](./src/assets/screenshots/fourthScreen.avif)
 
 ## Author
 
