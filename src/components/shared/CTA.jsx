@@ -5,7 +5,7 @@ function CTA({ handleClick }) {
         <button className="button">Buy</button>
       </li>
       <li>
-        <a className="link" onClick={handleClick}>
+        <a href="" className="link" onClick={handleClick}>
           Learn more
         </a>
       </li>
