@@ -4,7 +4,8 @@ import CTA from "./shared/CTA";
 
 function Jumbotron() {
   // TODO: create shared function with one argunent and use here;
-  const handleLearnMore = () => {
+  const handleLearnMore = (e) => {
+    e.preventDefault();
     const element = document.querySelector(".sound-section");
     window.scrollTo({
       top: element?.getBoundingClientRect().top,

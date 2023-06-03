@@ -1,6 +1,9 @@
+import CTA from "./shared/CTA";
+
 function SoundSection() {
-  //TODO: create shared function with one argunent and use here;
-  const handleLearnMore = () => {
+  // TODO: create shared function with one argunent and use here;
+  const handleLearnMore = (e) => {
+    e.preventDefault();
     const element = document.querySelector(".display-section");
     window.scrollTo({
       top: element?.getBoundingClientRect().bottom,
@@ -18,17 +21,7 @@ function SoundSection() {
           <span className="description">
             From $41.62/mo. for 24 mo. or $999 before trade-in
           </span>
-          {/* TODO: make the shared component with buttons and reuse it here and in Jumbotron component */}
-          <ul className="links">
-            <li>
-              <button className="button">Buy</button>
-            </li>
-            <li>
-              <a className="link" onClick={handleLearnMore}>
-                Learn more
-              </a>
-            </li>
-          </ul>
+          <CTA handleClick={handleLearnMore} />
         </div>
       </div>
     </div>
