@@ -1,9 +1,6 @@
-function DisplaySection({ triggerPreview }) {
-  //TODO: create shared function with one argunent and use here;
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
+import { handleScroll } from "../lib/utils";
 
+function DisplaySection({ triggerPreview }) {
   return (
     <div className="display-section wrapper">
       <h2 className="title">New</h2>
@@ -14,7 +11,7 @@ function DisplaySection({ triggerPreview }) {
       <button className="button" onClick={triggerPreview}>
         Try me!
       </button>
-      <button className="back-button" onClick={handleScrollToTop}>
+      <button className="back-button" onClick={handleScroll}>
         TOP
       </button>
     </div>

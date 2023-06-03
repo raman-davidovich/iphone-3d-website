@@ -18,6 +18,7 @@ import {
   GammaCorrectionPlugin,
   mobileAndTabletCheck,
 } from "webgi";
+// TODO: minimize chunks
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { scrollAnimation } from "../lib/scroll-animation";
