@@ -11,7 +11,10 @@ function DisplaySection({ triggerPreview }) {
       <button className="button" onClick={triggerPreview}>
         Try me!
       </button>
-      <button className="back-button" onClick={handleScroll}>
+      <button
+        className="back-button"
+        onClick={(e) => handleScroll("jumbotron-section", e)}
+      >
         TOP
       </button>
     </div>

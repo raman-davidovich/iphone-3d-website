@@ -3,17 +3,6 @@ import HoldingIphone from "../assets/images/iphone-hand.webp";
 import CTA from "./shared/CTA";
 
 function Jumbotron() {
-  // TODO: create shared function with one argunent and use here;
-  const handleLearnMore = (e) => {
-    e.preventDefault();
-    const element = document.querySelector(".sound-section");
-    window.scrollTo({
-      top: element?.getBoundingClientRect().top,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="jumbotron-section wrapper">
       <h2 className="title">New</h2>
@@ -22,7 +11,7 @@ function Jumbotron() {
       <span className="description">
         From $41.62/mo. for 24 mo. or $999 before trade-in
       </span>
-      <CTA handleClick={handleLearnMore} />
+      <CTA selector="jumbotron-section" />
       <img className="iphone-img" src={HoldingIphone} alt="iPhone" />
     </div>
   );
